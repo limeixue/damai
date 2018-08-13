@@ -30,8 +30,8 @@ export default {
         .then(function(rel){
           if(rel.success == 0){
             That.$router.push({
-              name:"",
-              path:"",
+              name:"Home",
+              path:"home",
               params:{
                 user:rel.user
               }
