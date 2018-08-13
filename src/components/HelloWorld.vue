@@ -1,7 +1,17 @@
 <template>
-<div>
-  <input type="text">
-</div>
+    <div>
+      <div>
+        <label>用户名:</label>
+        <input type="text" v-model="username"/>
+      </div>
+      <div>
+        <label>密码;</label>
+        <input type="password" v-model="password"/>
+      </div>
+      <div>
+        <input type="submit" value="提交" @click="submits()"/>
+      </div>
+    </div>
 </template>
 
 <script>
@@ -9,7 +19,27 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      username:"",
+      password:""
+    }
+  },
+  methhods:{
+    submits(){
+      let That = this;
+      this.$http.getHelloWorld("/api/user/login",{username:this.username,password:this.password})
+        .then(function(rel){
+          if(rel.success == 0){
+            That.$router.push({
+              name:"",
+              path:"",
+              params:{
+                user:rel.user
+              }
+            })
+          }else{
+            console.log(rel.msg);
+          }
+        })
     }
   }
 }

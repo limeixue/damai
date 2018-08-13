@@ -1,4 +1,4 @@
-improt * as http from "./http"
+import * as http from "./http"
 const $http = http;
 export  default{
   install(Vue){
