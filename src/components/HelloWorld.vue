@@ -16,14 +16,13 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
   data () {
     return {
       username:"",
       password:""
     }
   },
-  methhods:{
+  methods:{
     submits(){
       let That = this;
       this.$http.getHelloWorld("/api/user/login",{username:this.username,password:this.password})
