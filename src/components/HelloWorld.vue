@@ -15,7 +15,7 @@
 </template>
 
 <script>
-export default {
+export default {//export default是一个默认输出
   data () {
     return {
       username:"",
