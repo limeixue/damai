@@ -25,6 +25,7 @@ export default {//export default是一个默认输出
   methods:{
     submits(){
       let That = this;
+      //"/api/user/login"属于一个接口
       this.$http.getHelloWorld("/api/user/login",{username:this.username,password:this.password})
         .then(function(rel){
           if(rel.success == 0){
