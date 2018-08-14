@@ -3,7 +3,7 @@
     <Head-simper />
     <div class="login_cont">
       <div class="login_cont_img">
-        <img src="Login/img/logo.png" />
+        <img src="img/loginImg.png" />
       </div>
       <div class="login_cont_form">
         <Tabs type="card">
