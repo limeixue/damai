@@ -1,4 +1,6 @@
+// module.exports固定写法，输出
 module.exports = function(req){
+  // 成功
   const success = 0;
   const errorCode = "00000";
   const msg = "登录成功";
@@ -17,7 +19,7 @@ module.exports = function(req){
 
 
   return {
-    success,
+    success,//success:success,
     errorCode,
     msg,
     user
