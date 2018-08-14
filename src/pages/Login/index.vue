@@ -3,7 +3,7 @@
     <Head-simper />
     <div class="login_cont">
       <div class="login_cont_img">
-        <img src="./img/logo.png" />
+        <img src="Login/img/logo.png" />
       </div>
       <div class="login_cont_form">
         <Tabs type="card">
@@ -34,7 +34,7 @@
 
 <style scoped>
   .login{
-    width: 1000px;
+    width:90%;
     margin: 0 auto;
   }
   .login_cont{
