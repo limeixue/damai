@@ -2,7 +2,7 @@
   <div class="headSimper">
     <div class="headSimper_cont">
       <div class="headSimper_cont_img">
-        <img src="./img/logo.png" />
+        <img src="./img/loginImg.jpg" />
       </div>
       <div class="headSimper_cont_hr"></div>
       <div class="headSimper_cont_title">
