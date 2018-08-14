@@ -29,7 +29,7 @@
     clear: both;
   }
   .headSimper_cont{
-    width: 1000px;
+    width: 90%;
     margin: 0 auto;
     clear: both;
     overflow: hidden;
