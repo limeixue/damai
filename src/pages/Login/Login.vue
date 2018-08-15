@@ -22,9 +22,20 @@
               <FormItem>
                 <Button type="primary" @click="handleSubmit('formInline')" long>提交</Button>
               </FormItem>
+              <ul>
+                <li><img src="img/WeChat.png" alt=""></li>
+                <li><img src="img/WeChat.png" alt=""></li>
+                <li><img src="img/WeChat.png" alt=""></li>
+                <li><img src="img/WeChat.png" alt=""></li>
+              </ul>
+              <ul style="display: flex;">
+                <li>忘记密码</li>
+                <li>免费注册</li>
+              </ul>
             </Form>
           </TabPane>
           <TabPane label="短信快捷登录">标签二的内容</TabPane>
+          <TabPane label="扫码登录">二维码</TabPane>
         </Tabs>
       </div>
     </div>
