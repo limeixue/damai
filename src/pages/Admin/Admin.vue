@@ -42,7 +42,7 @@
         if(window.localStorage.getItem("username")){
           this.username = window.localStorage.getItem("username")
         }else{
-          this.username = ".....";
+          this.username = "梅雪";
         }
           //console.log(new Error("用户名信息出错"));
       }

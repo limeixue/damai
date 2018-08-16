@@ -9,7 +9,7 @@
 <script>
   export default {
     name: "HeadTop",
-    props:["username"]
+    props:["username"],
   }
 </script>
 

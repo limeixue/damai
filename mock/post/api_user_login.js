@@ -4,7 +4,7 @@ module.exports = function(req){// module.exports固定写法，输出
   const errorCode = "00000";
   const msg = "登录成功";
   const user = {
-    name: "李梅雪",
+    name: "梅雪",
     age: 18,
     sex: "女"
   }

@@ -22,15 +22,31 @@
               <FormItem>
                 <Button type="primary" @click="handleSubmit('formInline')" long>提交</Button>
               </FormItem>
-              <ul>
-                <li><img src="img/WeChat.png" alt=""></li>
-                <li><img src="img/WeChat.png" alt=""></li>
-                <li><img src="img/WeChat.png" alt=""></li>
-                <li><img src="img/WeChat.png" alt=""></li>
+              <ul class="otherLogin">
+                <li>
+                  <a href="#">
+                    <img src="./img/QQ.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./img/WeChat.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./img/Alipay.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./img/microblog.png" alt="">
+                  </a>
+                </li>
               </ul>
-              <ul style="display:flex;margin-left:69%">
-                <li style="list-style: none"><a href="#">忘记密码</a></li>
-                <li style="list-style: none"><a href="#">免费注册</a></li>
+              <ul style="display:flex;margin-left:50%">
+                <li style="list-style:none;width:120px;height:60px;line-height:60px;"><a href="#">忘记密码</a></li>
+                <li style="list-style:none;width:120px;height:60px;line-height:60px;"><a href="#">免费注册</a></li>
               </ul>
             </Form>
           </TabPane>
@@ -70,6 +86,8 @@
     margin-top:3%;
     margin-right:8%;
   }
+  .otherLogin{display:flex;}
+  .otherLogin>li{list-style: none;}
 </style>
 
 <script>
@@ -105,8 +123,8 @@
               .then((rel)=>{
                 //console.log(rel)
                 this.$Message.success("登录成功")
-                // window.localStorage.setItem("username",rel.user.name)
-                That.$router.push({
+                window.localStorage.setItem("username",rel.user.name)
+                That.$router.push({//路由需要传几个参数，对应的是哪个组件哪一个路由admin
                   path:"admin",
                   name:"Admin",
                   params:{
