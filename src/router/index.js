@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Home from "@/components/Home"
+// import HelloWorld from '@/components/HelloWorld'
+// import Home from "@/components/Home"
 import Login from "@/pages/Login/Login"
-import Admin from '@/pages/Admin'
+import Admin from '@/pages/Admin/Admin'
 import OrderMenu from '@/components/Order/OrderMenu'
 import MyMsg from "@/components/Order/MyMsg"
 
