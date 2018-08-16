@@ -97,13 +97,22 @@
     },
     methods:{
       handleSubmit(name) {
+        let That = this;
         this.$refs[name].validate((valid) => {
           if (valid) {
-                  //this.$Message.success('Success!');
+            //this.$Message.success('Success!');
             this.$http.loginSubmit("/api/user/login")
               .then((rel)=>{
                 //console.log(rel)
                 this.$Message.success("登录成功")
+                // window.localStorage.setItem("username",rel.user.name)
+                That.$router.push({
+                  path:"admin",
+                  name:"Admin",
+                  params:{
+                    data:rel.user
+                  }
+                })
               },(err)=>{
                 this.$Message.error("登录失败")
               })

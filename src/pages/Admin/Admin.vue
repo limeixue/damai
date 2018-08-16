@@ -1,14 +1,4 @@
-<style scoped>
-  .admin_cont{
-    width: 1000px;
-    margin: 0 auto;
-  }
-  .admin_cont_c{
-    background-color: red;
-    width: 400px;
-    height: 500px;
-  }
-</style>
+
 <template>
   <div class="admin">
     <Head-top :username="username"/>
@@ -54,7 +44,7 @@
         }else{
           this.username = ".....";
         }
-//                  console.log(new Error("用户名信息出错"));
+          //console.log(new Error("用户名信息出错"));
       }
     },
     components:{
@@ -63,3 +53,14 @@
     }
   }
 </script>
+<style scoped>
+  .admin_cont{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .admin_cont_c{
+    background-color: red;
+    width: 400px;
+    height: 500px;
+  }
+</style>
