@@ -23,6 +23,7 @@
 </script>
 
 <style scoped>
+
   .headSimper{
     background-color: white;
     overflow: hidden;

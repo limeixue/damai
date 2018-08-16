@@ -28,9 +28,9 @@
                 <li><img src="img/WeChat.png" alt=""></li>
                 <li><img src="img/WeChat.png" alt=""></li>
               </ul>
-              <ul style="display:flex;">
-                <li>忘记密码</li>
-                <li>免费注册</li>
+              <ul style="display:flex;margin-left:69%">
+                <li style="list-style: none"><a href="#">忘记密码</a></li>
+                <li style="list-style: none"><a href="#">免费注册</a></li>
               </ul>
             </Form>
           </TabPane>
@@ -52,14 +52,14 @@
     margin-top: 30px;
   }
   .login_cont_img{
-    width:100%;
+    width:90%;
     position: absolute;
     z-index:-1;
     background:black;
     float: left;
   }
   .login_cont_img img{
-    width:50%;
+    width:57%;
   }
   .login_cont_form{
     width:30%;
@@ -68,6 +68,7 @@
     margin-left:30px;
     padding:2%;
     margin-top:3%;
+    margin-right:8%;
   }
 </style>
 
