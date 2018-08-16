@@ -3,7 +3,7 @@
     <Head-simper />
     <div class="login_cont">
       <div class="login_cont_img">
-        <img src="img/loginImg.png" />
+        <img src="./img/loginImg.png_q75.jpg"/>
       </div>
       <div class="login_cont_form">
         <Tabs type="card">
@@ -28,7 +28,7 @@
                 <li><img src="img/WeChat.png" alt=""></li>
                 <li><img src="img/WeChat.png" alt=""></li>
               </ul>
-              <ul style="display: flex;">
+              <ul style="display:flex;">
                 <li>忘记密码</li>
                 <li>免费注册</li>
               </ul>
@@ -83,14 +83,17 @@
         }
       }
     },
+    components:{
+      HeadSimper,
+    },
     methods:{
       handleSubmit(name) {
         this.$refs[name].validate((valid) => {
           if (valid) {
-//                        this.$Message.success('Success!');
+                  //this.$Message.success('Success!');
             this.$http.loginSubmit("/api/user/login")
               .then((rel)=>{
-//                                    console.log(rel)
+                //console.log(rel)
                 this.$Message.success("登录成功")
               },(err)=>{
                 this.$Message.error("登录失败")
@@ -100,9 +103,6 @@
           }
         })
       }
-    },
-    components:{
-      HeadSimper,
     }
   }
 </script>
