@@ -52,14 +52,22 @@
     margin-top: 30px;
   }
   .login_cont_img{
+    width:100%;
+    position: absolute;
+    z-index:-1;
+    background:black;
     float: left;
   }
   .login_cont_img img{
-    width: 400px;
+    width:50%;
   }
   .login_cont_form{
-    float: left;
-    margin-left: 30px;
+    width:30%;
+    background:white;
+    float:right;
+    margin-left:30px;
+    padding:2%;
+    margin-top:3%;
   }
 </style>
 
