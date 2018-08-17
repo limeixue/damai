@@ -2,9 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import Home from "@/pages/Home/Home"
-import HomeBanner from '@/components/HomeCont/HomeBanner'
-import HomeNav from '@/components/HomeCont/HomeNav'
-import HomeVocalConcert from "@/components/HomeCont/HomeVocalConcert"
+// import HomeBanner from '@/components/HomeCont/HomeBanner'
+// import HomeNav from '@/components/HomeCont/HomeNav'
+// import HomeVocalConcert from "@/components/HomeCont/HomeVocalConcert"
+// import HomeOpera from "@/components/HomeCont/HomeOpera"
 // import Login from "@/pages/Login/Login"
 import Admin from '@/pages/Admin/Admin'
 import OrderMenu from '@/components/Order/OrderMenu'
@@ -23,20 +24,24 @@ export default new Router({
       path: '/',
       name: 'Home',
       component:Home,
-      children:[{
-        path:"",
-        name:"homebanner",
-        component:HomeBanner
-      },{
-        path:"",
-        name:"homenav",
-        component:HomeNav
-      },{
-        path:"",
-        name:"homevocalconcert",
-        component:HomeVocalConcert
-      }
-      ]
+      // children:[{
+      //   path:"",
+      //   name:"homebanner",
+      //   component:HomeBanner
+      // },{
+      //   path:"",
+      //   name:"homenav",
+      //   component:HomeNav
+      // },{
+      //   path:"",
+      //   name:"homevocalconcert",
+      //   component:HomeVocalConcert
+      // },{
+      //   path:"",
+      //   name:"homeopera",
+      //   component:HomeOpera
+      // }
+      // ]
     },{
       path: '/admin',
       name: "Admin",

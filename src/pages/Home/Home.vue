@@ -5,6 +5,9 @@
     <Home-banner/>
     <Home-nav/>
     <Home-vocal-concert/>
+    <Home-opera/>
+    <Home-sports-events/>
+    <Home-children-parents/>
   </div>
 </template>
 
@@ -14,6 +17,9 @@
   import HomeBanner from "@/components/HomeCont/HomeBanner"
   import HomeNav from "@/components/HomeCont/HomeNav"
   import HomeVocalConcert from "@/components/HomeCont/HomeVocalConcert"
+  import HomeOpera from "@/components/HomeCont/HomeOpera"
+  import HomeSportsEvents from "@/components/HomeCont/HomeSportsEvents"
+  import HomeChildrenParents from "@/components/HomeCont/HomeChildrenParents"
     export default {
         name: "home",
       components:{
@@ -21,7 +27,10 @@
         HeadSearch,
         HomeBanner,
         HomeNav,
-        HomeVocalConcert
+        HomeVocalConcert,
+        HomeOpera,
+        HomeSportsEvents,
+        HomeChildrenParents
       }
     }
 
