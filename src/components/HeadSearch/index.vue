@@ -25,7 +25,6 @@
   .headSearch{
     clear: both;
     overflow: hidden;
-    width:90%;
     margin:1% auto;
   }
   .headSearch_cont{

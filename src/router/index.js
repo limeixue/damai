@@ -3,6 +3,8 @@ import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import Home from "@/pages/Home/Home"
 import HomeBanner from '@/components/HomeCont/HomeBanner'
+import HomeNav from '@/components/HomeCont/HomeNav'
+import HomeVocalConcert from "@/components/HomeCont/HomeVocalConcert"
 // import Login from "@/pages/Login/Login"
 import Admin from '@/pages/Admin/Admin'
 import OrderMenu from '@/components/Order/OrderMenu'
@@ -25,7 +27,16 @@ export default new Router({
         path:"",
         name:"homebanner",
         component:HomeBanner
-      }]
+      },{
+        path:"",
+        name:"homenav",
+        component:HomeNav
+      },{
+        path:"",
+        name:"homevocalconcert",
+        component:HomeVocalConcert
+      }
+      ]
     },{
       path: '/admin',
       name: "Admin",

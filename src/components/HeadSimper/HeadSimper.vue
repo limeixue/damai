@@ -24,8 +24,6 @@
 <style scoped>
 
   .headSimper{
-    width:90%;
-    margin:0 auto ;
     background-color: white;
     overflow: hidden;
     clear: both;

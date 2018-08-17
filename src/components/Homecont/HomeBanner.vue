@@ -54,6 +54,5 @@
 </script>
 
 <style scoped>
-.homeBanner{width:90%;margin:0 auto;}
-.homeBanner img{width:100%;}
+  .homeBanner,.homeBanner img{width:100%;}
 </style>
