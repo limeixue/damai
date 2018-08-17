@@ -1,13 +1,15 @@
 <template>
-  <div class="home">
+  <div>
     <Head-top/>
-    <Head-search/>
-    <Home-banner/>
-    <Home-nav/>
-    <Home-vocal-concert/>
-    <Home-opera/>
-    <Home-sports-events/>
-    <Home-children-parents/>
+    <div class="home">
+      <Head-search/>
+      <Home-banner/>
+      <Home-nav/>
+      <Home-vocal-concert/>
+      <Home-opera/>
+      <Home-sports-events/>
+      <Home-children-parents/>
+    </div>
     <Bottom/>
   </div>
 </template>

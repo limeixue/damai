@@ -15,7 +15,7 @@
 
 <style scoped>
   .headTop{
-    padding:1% 0;
+    padding:1% 5%;
     overflow: hidden;
     border-bottom:1px solid #CCC;
   }
