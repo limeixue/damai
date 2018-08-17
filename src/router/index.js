@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
-import Home from "@/components/Home"
-import Login from "@/pages/Login/Login"
+import Home from "@/pages/Home/Home"
+import HomeBanner from '@/components/HomeCont/HomeBanner'
+// import Login from "@/pages/Login/Login"
 import Admin from '@/pages/Admin/Admin'
 import OrderMenu from '@/components/Order/OrderMenu'
 import MyMsg from "@/components/Order/MyMsg"
@@ -11,14 +12,20 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    // {
+    //   path: '/',
+    //   name: 'Login',
+    //   component: Login
+    // },
     {
-      path: '/Home',
-      name: 'Login',
-      component: Login
-    },{
       path: '/',
-      name: 'home',
-      component:Home
+      name: 'Home',
+      component:Home,
+      children:[{
+        path:"",
+        name:"homebanner",
+        component:HomeBanner
+      }]
     },{
       path: '/admin',
       name: "Admin",

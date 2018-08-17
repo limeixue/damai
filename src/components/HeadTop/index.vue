@@ -17,7 +17,8 @@
   .headTop{
     width: 90%;
     margin:0 auto;
-    padding: 15px;
+    padding:1% 0;
     overflow: hidden;
+    border-bottom:1px solid #CCC;
   }
 </style>

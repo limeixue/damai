@@ -1,21 +1,21 @@
 <template>
   <div>
-    <Head-simper/>
+    <Head-top/>
     <Head-search/>
-    <div>
-      ddfg
-    </div>
+    <Home-banner/>
   </div>
 </template>
 
 <script>
+  import HeadTop from "@/components/HeadTop"
   import HeadSearch from "@/components/HeadSearch"
-  import HeadSimper from "@/components/HeadSimper"
+  import HomeBanner from "@/components/HomeCont/HomeBanner"
     export default {
         name: "home",
       components:{
+        HeadTop,
         HeadSearch,
-        HeadSimper
+        HomeBanner
       }
     }
 

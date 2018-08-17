@@ -125,8 +125,8 @@
                 this.$Message.success("登录成功")
                 window.localStorage.setItem("username",rel.user.name)
                 That.$router.push({//路由需要传几个参数，对应的是哪个组件哪一个路由
-                  path:"home",
-                  name:"Home",
+                  path:"admin",
+                  name:"Admin",
                   params:{
                     data:rel.user
                   }
