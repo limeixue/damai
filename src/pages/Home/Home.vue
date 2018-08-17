@@ -8,6 +8,7 @@
     <Home-opera/>
     <Home-sports-events/>
     <Home-children-parents/>
+    <Bottom/>
   </div>
 </template>
 
@@ -20,6 +21,7 @@
   import HomeOpera from "@/components/HomeCont/HomeOpera"
   import HomeSportsEvents from "@/components/HomeCont/HomeSportsEvents"
   import HomeChildrenParents from "@/components/HomeCont/HomeChildrenParents"
+  import Bottom from "@/components/BottomOfPage/Bottom"
     export default {
         name: "home",
       components:{
@@ -30,7 +32,8 @@
         HomeVocalConcert,
         HomeOpera,
         HomeSportsEvents,
-        HomeChildrenParents
+        HomeChildrenParents,
+        Bottom
       }
     }
 

@@ -11,6 +11,7 @@ import Admin from '@/pages/Admin/Admin'
 import OrderMenu from '@/components/Order/OrderMenu'
 import MyMsg from "@/components/Order/MyMsg"
 
+
 Vue.use(Router)
 
 export default new Router({
