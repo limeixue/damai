@@ -1,64 +1,44 @@
 <template>
     <ul class="HomeNav">
       <li>
-        <a href="#">
-          <img src="./img/VocalConcert.png" alt="">
+          <img src="./img/VocalConcert.png" alt=""><br/>
           <span>演唱会</span>
-        </a>
       </li>
       <li>
-        <a href="#">
-          <img src="./img/Opera.png" alt="">
-          <span>演唱会</span>
-        </a>
+          <img src="./img/Opera.png" alt=""><br/>
+          <span>话剧歌剧</span>
       </li>
       <li>
-        <a href="#">
-          <img src="./img/SportsEvents.png" alt="">
-          <span>演唱会</span>
-        </a>
+          <img src="./img/SportsEvents.png" alt=""><br/>
+          <span>体育赛事</span>
       </li>
       <li>
-        <a href="#">
-          <img src="./img/ChildrenParents.png" alt="">
-          <span>演唱会</span>
-        </a>
+          <img src="./img/ChildrenParents.png" alt=""><br/>
+          <span>儿童亲子</span>
       </li>
       <li>
-        <a href="#">
-          <img src="./img/HolidayLeisure.png" alt="">
-          <span>演唱会</span>
-        </a>
+          <img src="./img/HolidayLeisure.png" alt=""><br/>
+          <span>度假休闲</span>
       </li>
       <li>
-        <a href="#">
-          <img src="./img/Concert.png" alt="">
-          <span>演唱会</span>
-        </a>
+          <img src="./img/Concert.png" alt=""><br/>
+          <span>音乐会</span>
       </li>
       <li>
-        <a href="#">
-          <img src="./img/QuYuanMiscellaneousAltar.png" alt="">
-          <span>演唱会</span>
-        </a>
+          <img src="./img/QuYuanMiscellaneousAltar.png" alt=""><br/>
+          <span>曲苑杂坛</span>
       </li>
       <li>
-        <a href="#">
-          <img src="./img/DanceBallet.png" alt="">
-          <span>演唱会</span>
-        </a>
+          <img src="./img/DanceBallet.png" alt=""><br/>
+          <span>舞蹈芭蕾</span>
       </li>
       <li>
-        <a href="#">
-          <img src="./img/Comic.png" alt="">
-          <span>演唱会</span>
-        </a>
+          <img src="./img/Comic.png" alt=""><br/>
+          <span>动漫</span>
       </li>
       <li>
-        <a href="#">
-          <img src="./img/TourismExhibition.png" alt="">
-          <span>演唱会</span>
-        </a>
+          <img src="./img/TourismExhibition.png" alt=""><br/>
+          <span>旅游展览</span>
       </li>
     </ul>
 </template>
@@ -71,8 +51,19 @@
 
 <style scoped>
   li{list-style: none;}
-  .HomeNav{display:flex;border:1px solid #CCC;padding-bottom:2%;margin-top:2%;}
-  .HomeNav>li{flex:1;padding:0 3%;margin-top:2%;}
-  .HomeNav img{display:table-cell;vertical-align:central;text-align:center;}
-  .HomeNav>li a{color: black;}
+  .HomeNav{
+    display:flex;
+    border:1px solid #CCC;
+    padding:2% 0 1% 0;
+    margin-top:2%;
+  }
+  .HomeNav>li{
+    flex:1;
+    font-size:13px;
+    cursor:pointer;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+  }
+  .HomeNav>li span{line-height:40px;}
 </style>
